@@ -9,7 +9,7 @@ $red: red;
   border: 1px solid blue;
   background-color: vars.$color-primary; 
 }
-.box + .box {
+.box + .box { 
   $spacere10px: vars.$spacer * 2;// 지역변수
   margin-top: $spacere10px; 
 }
