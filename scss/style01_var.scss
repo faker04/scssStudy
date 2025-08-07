@@ -1,0 +1,39 @@
+//컴파일 안되는 주석
+/*컴파일 되는 주석*/ 
+
+$color-primary: gray; 
+$num12: 12;
+$gutter: 16px;
+$gutter-2: 8px;
+$gutterNum: $gutter - $gutter-2; 
+$column-count: 3;
+$border-red: 1px solid &color-primary;
+$color-primary2 : $color-primary;
+$my-background: background;
+
+$myClassContainer: '.container';
+
+body {
+  background-color: $color-primary;
+  // border: $var1;
+  #{$my-background}: $color-primary2;
+  height: $gutterNum 
+} 
+h1 {
+  color: #fff;
+  width : (100px * 2); 
+  font-size: #{$num12}px;  
+}
+#{$myClassContainer}{  
+  width: (100px - $gutter * ($column-count - 1)) / $column-count;
+  margin: $gutter / 2;
+  padding: 10px + 5px; 
+} 
+
+@for $i from 1 through $column-count {  
+  .container-#{$i} { 
+    width: (100px - $gutter * ($i - 1)) / $i;
+    margin: $gutter / 2;
+    padding: 10px + 5px;  
+  }
+}

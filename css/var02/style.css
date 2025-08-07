@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*컴파일 되는 주석*/
+/*컴파일 되는 주석*/
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  background-color: skyblue;
+}
+
+.box + .box {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

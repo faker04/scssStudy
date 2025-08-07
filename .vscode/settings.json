@@ -1,0 +1,23 @@
+{
+  "git.autofetch": true,
+  "editor.tabSize": 2,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+	"liveSassCompile.settings.formats": [
+    {
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "css",
+			// "savePathSegmentKeys": null,
+			// "savePathReplaceSegmentsWith": null
+		},
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "css/Partials",
+			// "savePathSegmentKeys": null,
+			// "savePathReplaceSegmentsWith": null
+		}
+	],
+}
