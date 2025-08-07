@@ -7,7 +7,7 @@ $red: red;
   width: 100px;
   height: 100px;
   border: 1px solid blue;
-  background-color: vars.$color-primary;
+  background-color: vars.$color-primary; 
 }
 .box + .box {
   $spacere10px: vars.$spacer * 2;// 지역변수
