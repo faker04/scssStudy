@@ -11,5 +11,5 @@ $red: red;
 }
 .box + .box {
   $spacere10px: vars.$spacer * 2;// 지역변수
-  margin-top: $spacere10px;
+  margin-top: $spacere10px; 
 }
