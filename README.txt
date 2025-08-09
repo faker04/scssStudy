@@ -50,9 +50,23 @@ Sass는 _로 시작하는 파일은 컴파일 하지 않음
   @use './var' as v2;
   @use './var2';
 
+--------------------
+Nesting
+뭔가를 품는다,내포하다 라는 뜻(안쪽으로 포함한다)
 
+css - bem 구조
+block - 특정 독립적인 요소
+element - 하위 요소들
+modifier - 수정자
 
+css id class 등의 이름을 구조적으로 붙여주는 작업
 
+  & > .text-box__title {
+    font-size: 24px;
+  }
+  & > &__title { // 중첩된 클래스 선택자
+    font-size: 23px;
+  }
 
 
 

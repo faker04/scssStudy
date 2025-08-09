@@ -3,11 +3,19 @@
 @use './vars';
 //전역변수
 $red: red;
+$s: 10;
+$v2: vars.$spacer;
+$class-name: '.cls';
+
+#{$class-name} {border: 1px solid black;}
+#{$class-name}--text {border: 1px solid black;}
+#{$class-name}--btn {border: 1px solid black;}
+
 .box {
-  width: 100px;
+  width: #{$s *$s}px; 
   height: 100px;
-  border: 1px solid blue;
-  background-color: vars.$color-primary; 
+  border: 1px solid red;
+  background-color: vars.$color-primary;
 }
 .box + .box { 
   $spacere10px: vars.$spacer * 2;// 지역변수

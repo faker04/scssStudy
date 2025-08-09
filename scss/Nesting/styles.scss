@@ -1,0 +1,59 @@
+.box {
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+.box .box {
+
+}
+.box > .box {
+
+}
+#box > .box {
+  border: 5px solid #ccc;
+}
+#box {
+  //
+  > .box {
+    border: 5px solid #ccc;
+    &:hover {
+      background-color: green;
+    }
+    .box {
+      border-color: #ddd;
+      &:hover {
+        background-color: blue;
+      }
+    }
+  }
+  //
+
+  .box {
+    background-color: #eee;
+    @media screen and (max-width: 600px) {
+      background-color: #f0f0f0;
+      
+    }
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 20px;
+  font-size: 18px;
+}
+.text-box {
+  width: 300px;
+  border: 1px solid #333;
+  & > .text-box__title {
+    font-size: 24px;
+  }
+  & > &__title { // 중첩된 클래스 선택자
+    font-size: 23px;
+  }
+  > .text-box__title--red {
+    color: red;
+  }
+  > .text-box__content {
+    font-size: 18px;
+  }
+}

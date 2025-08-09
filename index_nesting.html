@@ -1,0 +1,44 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sass-Nesting</title>
+  <link rel="stylesheet" href="./css/Nesting/styles.css">
+</head>
+<body>
+  <h1>Sass-Nesting</h1>
+  <div id="box" class="box">
+    box1
+    <div class="box">
+      box2
+      <div class="box">
+        box3
+      </div>
+    </div>
+  </div>
+
+  <header>헤더 메뉴... <button class="btn">login</button></header>
+  <section>대문 이미지</section>
+  <div class="text-box">
+    <h2 class="text-box__title">글제목1</h2>
+    <div class="text-box__content">
+      <p class="text-box__content__desc">설명글1</p>
+      <button class="btn text-box__btnview">원본보기</button>
+    </div>
+  </div>
+  <div class="text-box">
+    <h2 class="text-box__title text-box__title--red">글제목2</h2>
+    <div class="text-box__content">
+      <p class="text-box__content__desc">설명글2</p>
+      <button class="btn">원본보기</button>
+    </div>
+  </div>
+  <div class="text-box">
+    <h2 class="text-box__title">글제목3</h2>
+    <div class="text-box__content">
+      <p class="text-box__content__desc">설명글3</p>
+      <button class="btn">원본보기</button>
+    </div>
+  </div>  
+</body>
+</html>
