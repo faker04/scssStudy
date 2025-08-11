@@ -1,0 +1,55 @@
+.box {
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+#box > .box {
+  border: 5px solid #ccc;
+}
+
+#box > .box {
+  border: 5px solid #ccc;
+}
+#box > .box:hover {
+  background-color: green;
+}
+#box > .box .box {
+  border-color: #ddd;
+}
+#box > .box .box:hover {
+  background-color: blue;
+}
+#box .box {
+  background-color: #eee;
+}
+@media screen and (max-width: 600px) {
+  #box .box {
+    background-color: #f0f0f0;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.text-box {
+  width: 300px;
+  border: 1px solid #333;
+}
+.text-box > .text-box__title {
+  font-size: 24px;
+}
+.text-box > .text-box__title {
+  font-size: 23px;
+}
+.text-box > .text-box__title--red {
+  color: red;
+}
+.text-box > .text-box__content {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=styles.css.map */
