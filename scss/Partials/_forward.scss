@@ -1,6 +1,8 @@
 // @forward './var' as v1-*;
 // @forward './var2' as v2-*;
+@forward './var';
+@forward './var2';
 // @import './var';
 // @import './var2';
-@use './var';
-@use './var2';
+// @use './var';
+// @use './var2';

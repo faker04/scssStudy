@@ -1,17 +1,38 @@
-/* Error: Undefined variable.
- *   ,
- * 8 |   border: 1px solid forward.$color-primary1; 
- *   |                     ^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\Partials\Partials.scss 8:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 8 \2502    border: 1px solid forward.$color-primary1; \d\a   \2502                      ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\Partials\\Partials.scss 8:21  root stylesheet";
+@charset "UTF-8";
+/*컴파일 되는 주석*/
+h1 {
+  border: 1px solid gray;
 }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mo-full-contents {
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+/*# sourceMappingURL=Partials.css.map */
