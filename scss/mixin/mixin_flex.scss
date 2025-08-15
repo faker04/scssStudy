@@ -1,0 +1,16 @@
+@import 'mixins_partials';
+// @use 'mixins_partials';
+
+
+.flex {
+  @include flex(center, 'center');
+  background: red;
+  padding: 10px;
+  height: 300px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}

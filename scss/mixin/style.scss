@@ -1,0 +1,46 @@
+@function func1() {
+  @return "1px solid #000";
+}
+@function func2() {
+  @return "#ff0000";
+}
+
+%ext1 {
+  border: 3px solid orange;
+  background-color: skyblue;
+  font-size: 32px;
+}
+
+@mixin mx1($bg, $fs) {
+  background-color: $bg;
+  font-size: $fs;
+  @content;
+}
+@mixin mx2($bg) {
+  .clss {
+    background: $bg;
+  }
+}
+@mixin mx3($class-name, $bg) {
+  .#{$class-name} {
+    background: $bg;
+  }
+}
+
+.cls {
+  // border: func1();
+  // background: func2();
+  // @extend %ext1;
+  @include mx1(#000, 38px) {
+    border: 3px solid orange
+  };
+}
+
+.cls1 {
+  // @extend %ext1;
+  @include mx1(#ff0000, 40px) {
+    text-decoration: underline
+  };
+}
+@include mx2(blue);
+@include mx3("ccc", blue)

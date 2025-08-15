@@ -1,0 +1,24 @@
+@mixin flex($isHorizontal: true, $directionalArrangement: 'start') {
+  display: flex;
+  @if $isHorizontal == true {
+    flex-direction: row;
+  } @else {
+    flex-direction: column;
+  }
+
+  @if $directionalArrangement == 'start' {
+    justify-content: flex-start;
+  } @else if $directionalArrangement == 'end' {
+    justify-content: flex-end;
+  } @else if $directionalArrangement == 'center' {
+    justify-content: center;
+  } @else if $directionalArrangement == 'space-between' {
+    justify-content: space-between;
+  } @else if $directionalArrangement == 'space-around' {
+    justify-content: space-around;
+  } @else {
+    justify-content: flex-start;
+  }
+  align-items: center;
+  gap: 10px;
+}
