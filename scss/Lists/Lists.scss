@@ -1,0 +1,18 @@
+$color-primary: #3498db;
+$box-types: ('big','mid','sm');
+$bgs : (red, green, blue);
+
+.box {
+  background: $color-primary;
+  // .box-#{nth($box-types, 3)} {
+  //   background: darken($color-primary, 10%);
+  // }
+  $i: 1;
+  @each $var in $box-types {
+    .box-#{$var} {
+      font-size: #{2 - 0.3 * $i}rem;
+      background: nth($bgs, $i);
+      $i: $i + 1;
+    }
+  }
+}

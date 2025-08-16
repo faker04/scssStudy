@@ -1,0 +1,44 @@
+h1 {
+  color: #00ff00;
+}
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+.icon-r::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ff0000;
+}
+
+.icon-g::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #00ff00;
+}
+
+.icon-b::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #0000ff;
+}
+
+/*# sourceMappingURL=style.css.map */

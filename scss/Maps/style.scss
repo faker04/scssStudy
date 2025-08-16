@@ -1,0 +1,43 @@
+$icon-types: (
+  'r': #ff0000, 
+  'g': #00ff00, 
+  'b': #0000ff,
+);
+
+$device-type: (
+  'mobile': 320px,
+  'tablet': 768px,
+  'desktop': 1024px,
+);
+
+@mixin mq($dt) {
+  $breakpoint: map-get($device-type, $dt);
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+};
+
+
+
+h1 {
+  color: map-get($icon-types, 'g');
+  @include mq('mobile') {
+    font-size: 32px;
+  }
+  @include mq('tablet') {
+    font-size: 48px;
+  }
+  @include mq('desktop') {
+    font-size: 64px;
+  }
+}
+
+@each $key, $value in $icon-types {
+  .icon-#{$key}::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: $value;
+  }
+}
