@@ -321,16 +321,7 @@
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                 </svg>
-                <input 
-                    type="tel" 
-                    id="userId" 
-                    class="input-field" 
-                    placeholder="사번 6자리를 입력하세요"
-                    autocomplete="username"
-                    pattern="[0-9]{6}"
-                    inputmode="numeric"
-                    maxlength="6"
-                >
+                <input type="text" placeholder="아이디(사번)을 입력하세요" maxlength="7" class="login-input-field" id="userId" inputmode="numeric" pattern="[0-9]*">
             </div>
 
             <div class="input-group">
